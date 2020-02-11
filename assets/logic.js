@@ -73,7 +73,7 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
 
 		var minUntil = frequency - trainRemain;
 
-		
+
 		var nextArrival = moment().add(minUntil, "minutes").format('hh:mm');
 
 		 
