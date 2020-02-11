@@ -62,7 +62,7 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
 		var firstTime = childSnapshot.val().trainComing;
 		var frequency = childSnapshot.val().everyXMin;
 
-		
+
 		var trainTime = moment.unix(firstTime).format("hh:mm");
 		
 		var difference =  moment().diff(moment(trainTime),"minutes");
