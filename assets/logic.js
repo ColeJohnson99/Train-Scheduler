@@ -53,7 +53,7 @@ $("#trainInfoBtn").on("click", function(event) {
 }); 
 
 
-database.ref().on("child_added", function(childSnapshot, prevChildKey) {
+database.ref().on("child_added", function(childSnapshot, prevChildKey) { 
 
 		console.log(childSnapshot.val());
 
@@ -70,7 +70,7 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
 		
 		var trainRemain = difference % frequency;
 
-		
+
 		var minUntil = frequency - trainRemain;
 
 		
